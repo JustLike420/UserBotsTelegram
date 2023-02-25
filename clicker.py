@@ -1,6 +1,9 @@
 from pyrogram import Client, types
 import asyncio
 from pyrogram.errors.exceptions.bad_request_400 import DataInvalid
+import logging
+
+logging.getLogger('pyrogram').setLevel(logging.ERROR)
 
 
 class UserClicker:
